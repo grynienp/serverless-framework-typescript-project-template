@@ -6,6 +6,15 @@
 
 Template for quickly creating serverless Node.js/TypeScript functions with [Serverless Framework](https://serverless.com/) & [AWS Lambda](https://aws.amazon.com/lambda/).
 
+Includes:
+
+* Deployment ready example function 'exponent'
+* Localhosting functions with [Serverless Offline](https://github.com/dherault/serverless-offline)
+* End-2-end -test examples for function handlers
+* TypeScript building
+* Generation of JSON Schema from TypeScript-interface and validation-middleware example with schema
+* Stage (dev, staging, production) config example
+
 ## Development environment
 
 First install npm packages and Serverless Framework:

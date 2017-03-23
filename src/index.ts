@@ -23,7 +23,12 @@ export function exponentHandler(event: any, _context: any, callback: LambdaCallb
 
   validate(eventBody, exponentDataSchema)
   .then(() => {
-    callback(null, stringifyResponseBody({statusCode: 200, body: { statusText: "success", data: { number: eventBody.number * eventBody.number }}}))
+    const successResponse: LambdaResponse = stringifyResponseBody({
+      statusCode: 200,
+      body: { statusText: "success", data: { number: eventBody.number * eventBody.number }}
+    });
+
+    callback(null, successResponse);
   })
   .catch((err: any) => { // when validation doesn't pass
     const errResponse: LambdaResponse = stringifyResponseBody(err.toHttpResponse());
