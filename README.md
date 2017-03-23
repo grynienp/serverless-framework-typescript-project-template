@@ -4,7 +4,7 @@
 
 # serverless-framework-typescript-project-template
 
-Template for quickly creating Serverless Node.js/TypeScript functions with [AWS Lambda](https://aws.amazon.com/lambda/).
+Template for quickly creating serverless Node.js/TypeScript functions with [Serverless Framework](https://serverless.com/) & [AWS Lambda](https://aws.amazon.com/lambda/).
 
 ## Development environment
 
