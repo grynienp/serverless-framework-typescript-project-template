@@ -2,9 +2,9 @@
 
 ---
 
-# Typescript serverless framework template
+# serverless-framework-typescript-project-template
 
-Uses [Serverless Framework](https://serverless.com/) with [AWS Lambdas](https://aws.amazon.com/lambda/) & AWS API Gateway to create Node.js/TypeScript REST-APIs.
+Template for quickly creating Serverless Node.js/TypeScript REST-APIs with [AWS Lambda](https://aws.amazon.com/lambda/).
 
 ## Development environment
 
