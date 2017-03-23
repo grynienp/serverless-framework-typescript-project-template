@@ -12,7 +12,8 @@ Template includes:
 * Localhosting functions with [Serverless Offline](https://github.com/dherault/serverless-offline)
 * End-2-end -test examples for function handlers
 * TypeScript building
-* Generation of JSON Schema from TypeScript-interface and validation-middleware example with schema
+* Generation of JSON Schema from TypeScript-interface
+* Validation example of event (HTTP request) data against JSON schema
 * Stage (dev, staging, production) config example
 
 ## Development environment
