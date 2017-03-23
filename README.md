@@ -25,13 +25,11 @@ To run tests:
 
     npm run test
 
-
-
 ## Deployment
 
 First config the AWS credentials:
 
-    serverless config credentials --provider aws --key <keyHere> --secret <secretKeyHere>
+    serverless config credentials --provider aws --key <key> --secret <secretKey>
 
 Then you can run:
 
