@@ -1,4 +1,8 @@
-# serverless-framework-typescript-project-template
+[![Checkout Finland Oy](https://extranet.checkout.fi/static/img/checkout-logo.png)](http://www.checkout.fi/)
+
+---
+
+# Typescript serverless framework template
 
 Uses [Serverless Framework](https://serverless.com/) with [AWS Lambdas](https://aws.amazon.com/lambda/) & AWS API Gateway to create Node.js/TypeScript REST-APIs.
 
