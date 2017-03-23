@@ -1,0 +1,42 @@
+{
+  "name": "typescript-serverless-framework-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "sls offline --stage dev",
+    "test": "tsc && NODE_ENV=test mocha -C build/test/e2e-test",
+    "build": "ts-node generate-schemas.ts && tsc",
+    "build:watch": "ts-node generate-schemas.ts && tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "dependencies": {
+    "jsonschema": "^1.1.1",
+    "ramda": "0.23.0"
+  },
+  "devDependencies": {
+    "@types/chai": "3.4.34",
+    "@types/mocha": "2.2.33",
+    "@types/node": "6.0.48",
+    "@types/ramda": "0.0.3",
+    "chai": "3.5.0",
+    "mkpath": "^1.0.0",
+    "mocha": "3.2.0",
+    "serverless": "1.5.1",
+    "serverless-offline": "^3.8.3",
+    "ts-node": "1.7.0",
+    "typescript": "2.1.5",
+    "typescript-json-schema": "^0.9.0",
+    "watch": "latest"
+  }
+}
