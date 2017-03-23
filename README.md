@@ -1,6 +1,3 @@
-HOX!!
-The development of this repo has been moved and open sourced to [GitHub](https://github.com/CheckoutFinland/serverless-framework-typescript-project-template)
-
 # typescript-serverless-framework-template
 
 Uses [Serverless Framework](https://serverless.com/) with [AWS Lambdas](https://aws.amazon.com/lambda/) & AWS API Gateway to create REST-APIs.
