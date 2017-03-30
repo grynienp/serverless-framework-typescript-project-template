@@ -39,7 +39,8 @@ describe('Register Payment', () => {
       const body = JSON.parse(result.body);
       expect(result.statusCode).to.equal(400);
       expect(body.statusText).to.equal('invalid request parameters');
-      expect(body.errors[0]).to.equal('instance requires property "number"');
+      expect(body.errors[0]).to.equal('instance.number is not of a type(s) number');
     });
   });
+
 });

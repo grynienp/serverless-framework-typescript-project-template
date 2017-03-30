@@ -5,7 +5,7 @@ const config = require('../config/config')(process.env.STAGE);
 import {HttpResponse} from './types/HttpResponse';
 import {LambdaResponse} from './types/LambdaResponse';
 import {LambdaCallback} from './types/LambdaCallback';
-import {ExponentData} from './types/schema-models/ExponentData'
+import {ExponentData, DecodeExponentData} from './types/schema-models/ExponentData'
 
 const exponentDataSchema = require('./types/schemas/ExponentData.json');
 
@@ -19,8 +19,8 @@ import {validate} from './middleware/validator';
  * @param  callback callback which will be called with param including statusCode and body to return
  */
 export function exponentHandler(event: any, _context: any, callback: LambdaCallback) {
-  const eventBody: ExponentData = typeof event.body === 'string' ? JSON.parse(event.body) : event.body;
-
+  const eventBody: ExponentData =
+    typeof event.body === 'string' ? DecodeExponentData(JSON.parse(event.body)) : DecodeExponentData(event.body);
   validate(eventBody, exponentDataSchema)
   .then(() => {
     const successResponse: LambdaResponse = stringifyResponseBody({
